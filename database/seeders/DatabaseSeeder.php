@@ -111,82 +111,242 @@ class DatabaseSeeder extends Seeder
 
         //KIDS
         Kid::factory()->create([
-            'name' => 'Lucas',
-            'surname' => 'Martínez',
-            'photo' => '/img/kids/boy.jpg',
-            'age' => 4,
-            'behaviour' => true,
-        ]);
-        
-        Kid::factory()->create([
-            'name' => 'Sofía',
-            'surname' => 'Pérez',
-            'photo' => '/img/kids/girl.jpg',
+            'name' => 'Curro',
+            'surname' => 'Ramírez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/ohi4apj4stfncklbxtxz.png',
             'age' => 6,
-            'behaviour' => false,
-        ]);
-        
-        Kid::factory()->create([
-            'name' => 'Mateo',
-            'surname' => 'Gómez',
-            'photo' => '/img/kids/boy.jpg',
-            'age' => 5,
             'behaviour' => true,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Camila',
+            'name' => 'Martina',
             'surname' => 'López',
-            'photo' => '/img/kids/girl.jpg',
-            'age' => 9,
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/dxflwm8okefxhmx8f5xu.png',
+            'age' => 3,
             'behaviour' => false,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Liam',
-            'surname' => 'Hernández',
-            'photo' => '/img/kids/boy.jpg',
+            'name' => 'Dario',
+            'surname' => 'Torres',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/v2xmxydxyoq9zools02d.png',
+            'age' => 12,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Ainara',
+            'surname' => 'Martínez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/tsgbxef6mrem0og3wotl.png',
+            'age' => 15,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Mohamed',
+            'surname' => 'González',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/bquc3dxqclys3pdf4kv0.png',
             'age' => 8,
             'behaviour' => true,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Isabella',
-            'surname' => 'Ramírez',
-            'photo' => '/img/kids/girl.jpg',
-            'age' => 7,
+            'name' => 'Paula',
+            'surname' => 'Castillo',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/dlapksb0ruprc6uemyij.png',
+            'age' => 18,
             'behaviour' => false,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Dylan',
-            'surname' => 'Torres',
-            'photo' => '/img/kids/boy.jpg',
-            'age' => 13,
+            'name' => 'Anabel',
+            'surname' => 'Galeote',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/vnqj83vjefzukht76rga.png',
+            'age' => 10,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Sofia',
+            'surname' => 'Perez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/fqv2jzz6wve4mhfwfonr.png',
+            'age' => 7,
             'behaviour' => true,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Mía',
-            'surname' => 'Rojas',
-            'photo' => '/img/kids/girl.jpg',
-            'age' => 15,
+            'name' => 'Naira',
+            'surname' => 'Vergara',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/rh8gsunmsoy4wcakfk3k.png',
+            'age' => 13,
             'behaviour' => false,
         ]);
         
         Kid::factory()->create([
-            'name' => 'Ethan',
-            'surname' => 'Vargas',
-            'photo' => '/img/kids/boy.jpg',
+            'name' => 'Turro',
+            'surname' => 'Cruz',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/yzc4tnisfcrl3tcgo1dq.png',
+            'age' => 9,
+            'behaviour' => false,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Sol',
+            'surname' => 'Moreno',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/eq3c895ekaym1zteiexc.png',
+            'age' => 1,
+            'behaviour' => false,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Gabriel ',
+            'surname' => 'Navarro',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/jozlnrmrnuzo5groidtq.png',
             'age' => 16,
             'behaviour' => true,
         ]);
+
+        Kid::factory()->create([
+            'name' => 'Sara',
+            'surname' => 'Fernández',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/wgqixe7kkwkooj1ngp5u.png',
+            'age' => 4,
+            'behaviour' => true,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Laura',
+            'surname' => 'Peña',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/loxzc5ac9ejpxuxlutq5.png',
+            'age' => 0,
+            'behaviour' => true,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Pablo',
+            'surname' => 'Soto',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/u8setelsfsgvdsfxggqm.png',
+            'age' => 18,
+            'behaviour' => false,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Curro',
+            'surname' => 'Ramírez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/ohi4apj4stfncklbxtxz.png',
+            'age' => 6,
+            'behaviour' => true,
+        ]);
         
         Kid::factory()->create([
-            'name' => 'Emma',
-            'surname' => 'García',
-            'photo' => '/img/kids/girl.jpg',
-            'age' => 14,
+            'name' => 'Martina',
+            'surname' => 'López',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/dxflwm8okefxhmx8f5xu.png',
+            'age' => 3,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Dario',
+            'surname' => 'Torres',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/v2xmxydxyoq9zools02d.png',
+            'age' => 12,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Ainara',
+            'surname' => 'Martínez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/tsgbxef6mrem0og3wotl.png',
+            'age' => 15,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Mohamed',
+            'surname' => 'González',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/bquc3dxqclys3pdf4kv0.png',
+            'age' => 8,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Paula',
+            'surname' => 'Castillo',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/dlapksb0ruprc6uemyij.png',
+            'age' => 18,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Anabel',
+            'surname' => 'Galeote',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/vnqj83vjefzukht76rga.png',
+            'age' => 10,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Sofia',
+            'surname' => 'Perez',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/fqv2jzz6wve4mhfwfonr.png',
+            'age' => 7,
+            'behaviour' => true,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Naira',
+            'surname' => 'Vergara',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/rh8gsunmsoy4wcakfk3k.png',
+            'age' => 13,
+            'behaviour' => false,
+        ]);
+        
+        Kid::factory()->create([
+            'name' => 'Turro',
+            'surname' => 'Cruz',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528054/Toys/yzc4tnisfcrl3tcgo1dq.png',
+            'age' => 9,
+            'behaviour' => false,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Sol',
+            'surname' => 'Moreno',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/eq3c895ekaym1zteiexc.png',
+            'age' => 1,
+            'behaviour' => false,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Gabriel ',
+            'surname' => 'Navarro',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/jozlnrmrnuzo5groidtq.png',
+            'age' => 16,
+            'behaviour' => true,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Sara',
+            'surname' => 'Fernández',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/wgqixe7kkwkooj1ngp5u.png',
+            'age' => 4,
+            'behaviour' => true,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Laura',
+            'surname' => 'Peña',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/loxzc5ac9ejpxuxlutq5.png',
+            'age' => 0,
+            'behaviour' => true,
+        ]);
+
+        Kid::factory()->create([
+            'name' => 'Pablo',
+            'surname' => 'Soto',
+            'photo' => 'https://res.cloudinary.com/albertokz/image/upload/v1734528053/Toys/u8setelsfsgvdsfxggqm.png',
+            'age' => 18,
             'behaviour' => false,
         ]);
         
