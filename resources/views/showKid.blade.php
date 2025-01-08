@@ -14,6 +14,7 @@
                 <th>Surname</th>
                 <th>Photo</th>
                 <th>Age</th>
+                <th>Country</th>
                 <th>Behaviour</th>
                 <th>Created at</th>
             </tr>
@@ -25,6 +26,7 @@
                     <td>{{$kids->surname}}</td>
                     <td><img src="{{$kids->photo}}" alt="{{$kids->name}}"></td>
                     <td>{{$kids->age}}</td>
+                    <td>{{$kids->country}}</td>
                     <td>
                         @if ($kids->behaviour === 1)
                             <span class="active">Good</span>
