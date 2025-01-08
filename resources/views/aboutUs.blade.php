@@ -9,26 +9,26 @@ This project was developed by two different teams
     </h3>
     <div>
         <img src="https://avatars.githubusercontent.com/u/117454655?v=4" alt="">
-        <p></p>
+        <p>Pepe</p>
     </div>
     <div>
         <img src="https://avatars.githubusercontent.com/u/185358023?v=4" alt="">
-        <p></p>
+        <p>Rebecca</p>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/145048993?v=4" alt="">
-        <p></p>
+        <p>Rodrigo</p>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/135219405?v=4" alt="">
-        <p></p>
+        <p>Diego</p>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/185358222?v=4" alt="">
-        <p></p>
+        <p>Valeria</p>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/185357841?v=4" alt="">
-        <p></p>
+        <p>Talena</p>
     </div>
 </div>
