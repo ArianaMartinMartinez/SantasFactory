@@ -4,11 +4,31 @@
 @import url(forms.css);
 @import url(tables.css);
 
+:root {
+    --lightBlue: #E9EFF2;
+    --green: #025940;
+    --ligthGreen: #75BF9C;
+    --darkRed: #590303;
+    --red: #D92B2B;
+    --yellow: #F8C34D;
+    --pink: #FFE4CC;
+    --lightBlack: #333333;
+
+
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     font-family: arial;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
     background-color: #f8f9fa;
-    width: 100%;
+}
+
+main{
+    flex: 1;
 }

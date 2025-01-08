@@ -1,10 +1,7 @@
 <header>
-    <h1>🎁 HO HO HO!! Welcome to Santa's Toy Factory 🎄</h1>
-
-    <div class="backBtnContainer">
-        <a href="{{ route('kidshome') }}" class="backBtn">Santa</a>
-    </div>
-    <div class="backBtnContainer">
-        <a href="{{ route('toyshome') }}" class="backBtn">Elves</a>
+    <h1>SANTA'S FACTORY</h1>
+    <div class="headerButtons">
+        <a href=""><img src="{{ asset('img/buttons/buttonSanta.png')}}" alt=""></a>
+        <a href=""><img src="{{asset('img/buttons/buttonElf.png')}}" alt=""></a>
     </div>
 </header>
