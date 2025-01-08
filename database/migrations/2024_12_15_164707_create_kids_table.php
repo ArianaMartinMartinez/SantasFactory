@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('surname');
             $table->text('photo');
             $table->smallInteger('age');
+            $table->string('country');
             $table->boolean('behaviour');
             $table->timestamps();
         });
