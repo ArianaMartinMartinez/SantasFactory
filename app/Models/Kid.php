@@ -14,6 +14,7 @@ class Kid extends Model
         'surname',
         'photo',
         'age',
+        'country',
         'behaviour'
     ];
 

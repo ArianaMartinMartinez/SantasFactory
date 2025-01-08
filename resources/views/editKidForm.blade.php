@@ -32,6 +32,11 @@
             </div>
 
             <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="country" id="country" class="form-input" required placeholder="{{ $kid->country}}">
+            </div>
+
+            <div class="form-group">
                 <label for="behaviour" class="form-label">Behaviour</label>
                 <select name="behaviour" id="behaviour" class="form-select" required>
                     <option value="1">Good</option>
