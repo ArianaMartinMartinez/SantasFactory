@@ -9,26 +9,56 @@ This project was developed by two different teams
     </h3>
     <div>
         <img src="https://avatars.githubusercontent.com/u/117454655?v=4" alt="">
-        <p>Pepe</p>
+        <a>Pepe</a>
     </div>
     <div>
         <img src="https://avatars.githubusercontent.com/u/185358023?v=4" alt="">
-        <p>Rebecca</p>
+        <a>Rebecca</a>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/145048993?v=4" alt="">
-        <p>Rodrigo</p>
+        <a>Rodrigo</a>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/135219405?v=4" alt="">
-        <p>Diego</p>
+        <a>Diego</a>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/185358222?v=4" alt="">
-        <p>Valeria</p>
+        <a>Valeria</a>
     </div> 
     <div>
         <img src="https://avatars.githubusercontent.com/u/185357841?v=4" alt="">
-        <p>Talena</p>
+        <a>Talena</a>
+    </div>
+</div>
+
+<div>
+    <h3>
+        Second Sprint.
+    </h3>
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/63065122?v=4" alt="">
+        <a></a>
+    </div>
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/104553851?v=4" alt="">
+        <a></a>
+    </div> 
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/185358197?v=4" alt="">
+        <a></a>
+    </div> 
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/185357978?v=4" alt="">
+        <a></a>
+    </div> 
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/128361015?v=4" alt="">
+        <a></a>
+    </div> 
+    <div>
+        <img src="https://avatars.githubusercontent.com/u/118169171?v=4" alt="">
+        <a></a>
     </div>
 </div>
