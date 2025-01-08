@@ -21,6 +21,7 @@ class KidFactory extends Factory
             'surname' => $this->faker->word(),
             'photo' => $this->faker->imageUrl(640, 640, 'kids'),
             'age' => $this->faker->numberBetween(0, 18),
+            'country' => $this->faker->country(),
             'behaviour' => $this->faker->boolean(),
         ];
     }
