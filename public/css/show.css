@@ -17,15 +17,15 @@
     justify-content: center;
     background-color: var(--lightBlack);
     color: var(--lightBlue);
-    transition: transform 0.4s ease; 
+    transition: transform 0.4s ease;
 }
 
 .backBtnStyle:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
-.styleTableShow td{
-    border: 1.5px solid var(--lightBlack);  
+.styleTableShow td {
+    border: 1.5px solid var(--lightBlack);
     border-radius: 0.5rem;
     width: 140px;
     text-align: center;
@@ -44,4 +44,12 @@ td.no-border {
 .nameSurnameTable {
     font-size: 30px;
     text-align: center;
+}
+
+.active {
+    background-color: var(--ligthGreen);
+}
+
+.inactive {
+    background-color: var(--red);
 }
