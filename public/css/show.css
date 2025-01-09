@@ -17,6 +17,11 @@
     justify-content: center;
     background-color: var(--lightBlack);
     color: var(--lightBlue);
+    transition: transform 0.4s ease; 
+}
+
+.backBtnStyle:hover {
+    transform: scale(1.05); 
 }
 
 .styleTableShow td{
@@ -28,6 +33,7 @@
 
 td.no-border {
     border: none;
+    padding: 1rem;
 }
 
 .styleTableShow {
