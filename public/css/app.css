@@ -3,21 +3,21 @@
 @import url(header.css);
 @import url(forms.css);
 @import url(tables.css);
+@import url(show.css);
 
 :root {
-    --lightBlue: #E9EFF2;
+    --lightBlue: #e9eff2;
     --green: #025940;
-    --ligthGreen: #75BF9C;
+    --ligthGreen: #75bf9c;
     --darkRed: #590303;
-    --red: #D92B2B;
-    --yellow: #F8C34D;
-    --pink: #FFE4CC;
+    --red: #d92b2b;
+    --yellow: #f8c34d;
+    --pink: #ffe4cc;
     --lightBlack: #333333;
-
-
 }
 
-body,html{
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -29,6 +29,6 @@ body {
     background-color: #f8f9fa;
 }
 
-main{
+main {
     flex: 1;
 }
