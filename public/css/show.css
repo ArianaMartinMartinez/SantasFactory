@@ -1,0 +1,41 @@
+.containerShow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--pink);
+}
+
+.backBtnStyle {
+    display: flex;
+    width: 80px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightBlack);
+    color: var(--lightBlue);
+}
+
+.styleTableShow td{
+    border: 1.5px solid var(--lightBlack);  
+    border-radius: 0.5rem;
+    width: 140px;
+    text-align: center;
+}
+
+td.no-border {
+    border: none;
+}
+
+.styleTableShow {
+    padding: 2rem;
+    border-spacing: 10px;
+}
+
+.nameSurnameTable {
+    font-size: 30px;
+    text-align: center;
+}

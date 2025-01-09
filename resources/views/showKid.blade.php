@@ -1,32 +1,23 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="backBtnContainer">
-        <a href="{{ route('kidshome') }}" class="backBtn">🔙</a>
-    </div>
+    <div class="containerShow">
 
-    <div class="tablekid">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>Photo</th>
-                <th>Age</th>
-                <th>Country</th>
-                <th>Behaviour</th>
-                <th>Created at</th>
-            </tr>
-            </thead>
-            <tb>
+        <div class="backBtnStyle">
+            <a href="{{ route('kidshome') }}" class="backBtnStyle">Back</a>
+        </div>
+    
+        <table class="styleTableShow">
+                <tr> 
+                    <td rowspan="3" class="no-border"><img src="{{$kids->photo}}" alt="{{$kids->name}}"></td>
+                    <td class="nameSurnameTable" colspan="2">{{$kids->name}} {{$kids->surname}}</td>
+                </tr>   
                 <tr>
-                    <td>{{$kids->id}}</td>
-                    <td>{{$kids->name}}</td>
-                    <td>{{$kids->surname}}</td>
-                    <td><img src="{{$kids->photo}}" alt="{{$kids->name}}"></td>
-                    <td>{{$kids->age}}</td>
+                    <td>{{$kids->age}} years old</td>
                     <td>{{$kids->country}}</td>
+                </tr>
+                <tr>
+                    <td>ID - {{$kids->id}}</td>
                     <td>
                         @if ($kids->behaviour === 1)
                             <span class="active">Good</span>
@@ -34,9 +25,7 @@
                             <span class="inactive">Bad</span>
                         @endif
                     </td>
-                    <td>{{$kids->created_at->format('d/m/y')}}</td>
                 </tr>
-            <tb>
         </table>
     </div>
 @endsection

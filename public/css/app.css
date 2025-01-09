@@ -3,6 +3,7 @@
 @import url(header.css);
 @import url(forms.css);
 @import url(tables.css);
+@import url(show.css);
 
 :root {
     --lightBlue: #E9EFF2;
