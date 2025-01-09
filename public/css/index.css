@@ -16,4 +16,42 @@
     backdrop-filter: blur(10px);
     border-radius: 20%;
 }
+.containerData{
+    background-color: var(--pink);
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10%;
+    
+}
+.statistics{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: var(--green);
+}
 
+.iconData{
+    position: absolute;
+    top: -30;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+
+    width: 6rem;
+
+}
+.products{
+    background-color: var(--pink);
+    padding: 2rem;
+    text-align: center;
+}
+.productsGrid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.productTower img{
+    width: 15rem;
+}
