@@ -7,7 +7,7 @@
         </div>
     
         <div class="formCreateAndEdit container">
-            <h2 class="form-title">New Kid</h2>
+            <h2 class="form-title">New kid</h2>
             <form action="{{ route('kidsstore') }}" method="POST" class="form-container">
     
                 @csrf

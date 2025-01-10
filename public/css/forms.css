@@ -11,6 +11,11 @@
 .containerForm {
     background-color: var(--ligthGreen);
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .formCreateAndEdit {
