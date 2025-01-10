@@ -1,10 +1,11 @@
 .containerShow {
+    background-color: var(--ligthGreen);
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
-    background-color: var(--pink);
+    gap: 1rem;
 }
 
 .backBtnStyle {
@@ -36,6 +37,10 @@ td.no-border {
     padding: 1rem;
 }
 
+td.no-border img {
+    transform: scale(1.5);
+}
+
 .styleTableShow {
     padding: 2rem;
     border-spacing: 10px;
@@ -52,4 +57,14 @@ td.no-border {
 
 .inactive {
     background-color: var(--red);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 70%;
 }

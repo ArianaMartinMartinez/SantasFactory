@@ -5,7 +5,7 @@
         <div class="backBtnStyle">
             <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
         </div>
-        <div class="formCreateAndEdit container">
+        <div class="containerFormInputs">
             <h2 class="form-title">New toy</h2>
             <form action="{{ route('toysstore') }}" method="POST" class="form-container">
     

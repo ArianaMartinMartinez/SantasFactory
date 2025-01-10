@@ -6,7 +6,7 @@
             <a href="{{ route('kidshome') }}" class="backBtnStyle">Back</a>
         </div>
     
-        <div class="formCreateAndEdit container">
+        <div class="containerFormInputs">
             <h2 class="form-title">New kid</h2>
             <form action="{{ route('kidsstore') }}" method="POST" class="form-container">
     
@@ -53,8 +53,8 @@
     
     
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-create">Create</button>
-                    <button type="reset" class="btn btn-reset">Reset</button>
+                    <button type="submit" class="btn-create">Create</button>
+                    <button type="reset" class="btn-reset">Reset</button>
                 </div>
             </form>
         </div>
