@@ -1,40 +1,28 @@
 @extends('layouts.app')
 @section('content')
+    <div class="containerShow">
 
-    <div class="backBtnContainer">
-        <a href="{{ route('kidshome') }}" class="backBtn">🔙</a>
-    </div>
+        <div class="backBtnStyle">
+            <a href="{{ route('kidshome') }}" class="backBtnStyle">Back</a>
+        </div>
 
-    <div class="tablekid">
-        <table class="table">
-            <thead>
+        <table class="styleTableShow">
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>Photo</th>
-                <th>Age</th>
-                <th>Behaviour</th>
-                <th>Created at</th>
+                <td rowspan="3" class="no-border"><img src="{{ $kids->photo }}" alt="{{ $kids->name }}"></td>
+                <td class="nameSurnameTable" colspan="2">{{ $kids->name }} {{ $kids->surname }}</td>
             </tr>
-            </thead>
-            <tb>
-                <tr>
-                    <td>{{$kids->id}}</td>
-                    <td>{{$kids->name}}</td>
-                    <td>{{$kids->surname}}</td>
-                    <td><img src="{{$kids->photo}}" alt="{{$kids->name}}"></td>
-                    <td>{{$kids->age}}</td>
-                    <td>
-                        @if ($kids->behaviour === 1)
-                            <span class="active">Good</span>
-                        @else
-                            <span class="inactive">Bad</span>
-                        @endif
-                    </td>
-                    <td>{{$kids->created_at->format('d/m/y')}}</td>
-                </tr>
-            <tb>
+            <tr>
+                <td>{{ $kids->age }} years old</td>
+                <td>{{ $kids->country }}</td>
+            </tr>
+            <tr>
+                <td>ID - {{ $kids->id }}</td>
+                @if ($kids->behaviour === 1)
+                    <td class="active">Good</td>
+                @else
+                    <td class="inactive">Bad</td>
+                @endif
+            </tr>
         </table>
     </div>
 @endsection

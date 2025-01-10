@@ -41,6 +41,7 @@ class KidController extends Controller
             'surname' => $request->surname,
             'photo' => $request->photo,
             'age' => $request->age,
+            'country' => $request->country,
             'behaviour' => $request->behaviour,
         ]);
         $kids->save();
@@ -80,6 +81,7 @@ class KidController extends Controller
             'surname' => $request->surname,
             'photo' => $request->photo,
             'age' => $request->age,
+            'country' => $request->country,
             'behaviour' => $request->behaviour,
         ]);
 

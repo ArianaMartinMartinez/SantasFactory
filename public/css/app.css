@@ -3,12 +3,32 @@
 @import url(header.css);
 @import url(forms.css);
 @import url(tables.css);
+@import url(show.css);
+
+:root {
+    --lightBlue: #e9eff2;
+    --green: #025940;
+    --ligthGreen: #75bf9c;
+    --darkRed: #590303;
+    --red: #d92b2b;
+    --yellow: #f8c34d;
+    --pink: #ffe4cc;
+    --lightBlack: #333333;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 body {
     font-family: arial;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
     background-color: #f8f9fa;
-    width: 100%;
+}
+
+main {
+    flex: 1;
 }

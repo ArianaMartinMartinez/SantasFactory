@@ -1,16 +1,40 @@
 @extends('layouts.app')
 @section('content')
         <section class="hero">
-            <h2>Discover the Magic of Christmas!</h2>
-            <button class="cta-btn"><a class="linkButton" href="shop.html">Shop Now!!</a></button>
+            <h2>HO HO HO!! Welcome To Santa's Toy Factory</h2>
         </section>
 
-        <section class="products" id="products">
-            <h3>Our Top Toys</h3>
-            <div class="product-grid">
-                <div class="product-card">Toy 1</div>
-                <div class="product-card">Toy 2</div>
-                <div class="product-card">Toy 3</div>
+        <section class="statistics">
+            <div class="containerData">
+                <img src="{{asset('img/buttons/faceSanta.png')}}" alt="Santa Icon" class="iconData">
+                <div class="chart">
+                    <p>Test</p>
+                </div>
+            </div>
+
+            <div class="containerData">
+                <img src="{{asset('img/buttons/faceElf.png')}}" alt="Elf Icon" class="iconData">
+                <div class="chart">
+                    <p>Test</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <h3>TOP TOYS</h3>
+            <div class="productsGrid">
+                <div class="productTower">
+                    <p>Second Toy</p>
+                    <img src="{{asset("img/buttons/secondTower.png")}}" alt="Second Tower">
+                </div>
+                <div class="productTower">
+                    <p>First Toy</p>
+                    <img src="{{asset("img/buttons/firstTower.png")}}" alt="First Tower">
+                </div>
+                <div class="productTower">
+                    <p>Third Toy</p>
+                    <img src="{{asset("img/buttons/thirdTower.png")}}" alt="Third Tower">
+                </div>
             </div>
         </section>
 @endsection
