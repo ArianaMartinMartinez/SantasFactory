@@ -45,7 +45,37 @@ class ToyKidController extends Controller
                 $kid->toys()->attach($toy->id);
             }
 
-            
+            if($kid->behaviour == '1' && $kid->age < '18'){
+                $toy = $this->randomToy();
+                while($toy->age_range == '+18' || $toy->age_range == '+99'){
+                    $toy = $this->randomToy();
+                }
+                if($toy->age_range != '+18' || $toy->age_range != '+99'){
+                    $ageRange = explode('-', $toy->age_range);
+                    while($ageRange[0] > $kid->age || $ageRange[1] < $kid->age){
+                        $toy = $this->randomToy();
+                        $ageRange = explode('-', $toy->age_range);
+                    }
+
+                    $kid->toys()->detach(); 
+                    $firstToy = $toy;
+                    $kid->toys()->attach($toy->id);
+
+                    $toy = $this->randomToy();
+                    while($toy->age_range == '+18' || $toy->age_range == '+99'){
+                        $toy = $this->randomToy();
+                    }
+                    if($toy->age_range != '+18' || $toy->age_range != '+99'){
+                        $ageRange = explode('-', $toy->age_range);
+                        while(($ageRange[0] > $kid->age && $firstToy->id == $toy->id) || ($ageRange[1] < $kid->age && $firstToy->id == $toy->id)){
+                            $toy = $this->randomToy();
+                            $ageRange = explode('-', $toy->age_range);
+                        }
+                        $kid->toys()->attach($toy->id);
+                    }
+
+                }
+            }
         }
 
     }
