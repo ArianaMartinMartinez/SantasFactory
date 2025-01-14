@@ -1,17 +1,68 @@
-header {
-    background: var(--green);
-    padding: 1rem;
-    text-align: center;
-    color: var(--pink);
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-around;
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 
-}
-.headerButtons{
+header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    padding: 0px 30px 0px 30px;
+    position: absolute;
+    background-color: var(--green);
+    z-index: 1;
+}
 
+header.is-sticky{ 
+    position: fixed;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
+    background-color: var(--red);
+    animation: slideDown 0.35s ease-out;
+    
+}
+
+
+header.is-sticky h1{
+    font-size: 30px;
+    color: var(--white);
+}
+header.is-sticky a{
+    color: var(--white);
+}
+header.is-sticky a:hover{
+    background-color: var(--red);
+}
+
+h1 {
+    font-size: 3vh;
+}
+
+.navbar ul{
+    margin-top: 14px;
+    list-style-type: none;
+    overflow: hidden;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: ease-in-out 0.2s;
+}
+.navbar a:hover{
+    background-color: var(--light-orange);
+    color: black;
+}
+.navbar li{
+    float: left;
+}
+.aajaaLogo{
+    width: 85px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
