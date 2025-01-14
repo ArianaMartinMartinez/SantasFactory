@@ -1,13 +1,22 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="backBtnContainer">
-        <a href="{{ route('santashome') }}" class="backBtn">🔙</a>
+<div class="backButtonDiv">
+    <button class="backButton">
+        <a href="{{ route('santashome') }}" class="backBtn">Back</a>
+    </button>
+</div>
+<div class="newFilterButton">
+    <button class="newKidButton">
+        <a href="">New Kid</a>
+    </button>
+    <button class="filterButton">
+        <a href="">Filter by</a>
+    </button>
 </div>
 
-<div class="tableKid">
-    <h2 class="form-title">Kids</h2>
-    <table class="table">
+<div class="tableDiv">
+    <table class="tableKid">
         <thead>
             <tr>
                 <th>Photo</th>
@@ -29,26 +38,26 @@
                     <td>{{$kid->country}}</td>
                     <td>
                         @if ($kid->behaviour === 1)
-                            <span class="active">Good</span>
+                            <span>Good</span>
                         @else
-                            <span class="inactive">Bad</span>
+                            <span>Bad</span>
                         @endif
                     </td>
                     {{-- <td><a class="crudBtn" href="kids/show/{{$kid->id}}">👁️</a></td>
                     <td><a class="crudBtn"href="kids/edit/{{$kid->id}}">✏️</a></td>
                     <td><a class="crudBtn" href="?action=delete&id={{$kid->id}}">❌</a></td> --}}
                     <td>
-                        <button class="showButton">
+                        <button class="actionButton">
                             <img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
                         </button>
                     </td>
                     <td>
-                        <button class="editButton">
+                        <button class="actionButton">
                              <img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
                         </button>
                     </td>
                     <td>
-                        <button class="deleteButton">
+                        <button class="actionButton">
                             <img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
                         </button>
                     </td>
