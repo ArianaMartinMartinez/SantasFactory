@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\Redirect;
 
 class ToyController extends Controller
 {
-        /**
-     * Display a listing of the resource.
-     */
+
     public function index(Request $request)
     {
         if ($request->action === 'delete'){
@@ -23,17 +21,11 @@ class ToyController extends Controller
         return view('toys', compact('toys'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('createToyForm');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $toys = Toy::create([
@@ -47,9 +39,6 @@ class ToyController extends Controller
         return Redirect::to(route('toyshome'));
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         $toys = Toy::find($id);
@@ -57,9 +46,6 @@ class ToyController extends Controller
         return view('showToy', compact('toys'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
         $toy = Toy::find($id);
@@ -67,9 +53,6 @@ class ToyController extends Controller
         return view('editToyForm', compact('toy'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         $toys = Toy::find($id);
@@ -85,9 +68,6 @@ class ToyController extends Controller
         return Redirect::to('toyshome');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         $toys = Toy::find($id);
