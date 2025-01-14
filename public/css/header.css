@@ -8,11 +8,10 @@
   }
 
 header{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 30px 0px 30px;
-    position: absolute;
+    color: var(--pink);
     background-color: var(--green);
     z-index: 1;
 }
@@ -21,17 +20,16 @@ header.is-sticky{
     position: fixed;
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
     background-color: var(--red);
-    animation: slideDown 0.35s ease-out;
-    
+    width: 100%;
+    animation: slideDown 0.35s ease-out;   
 }
-
 
 header.is-sticky h1{
     font-size: 30px;
-    color: var(--white);
+    color: var(--pink);
 }
 header.is-sticky a{
-    color: var(--white);
+    color: var(--pink);
 }
 header.is-sticky a:hover{
     background-color: var(--red);
@@ -51,18 +49,12 @@ h1 {
     padding: 15px;
     display: block;
     transition: ease-in-out 0.2s;
+    color: var(--pink);
 }
 .navbar a:hover{
-    background-color: var(--light-orange);
-    color: black;
+    background-color: var(--red);
+    color: var(--pink);
 }
 .navbar li{
     float: left;
 }
-.aajaaLogo{
-    width: 85px;
-    vertical-align: middle;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
