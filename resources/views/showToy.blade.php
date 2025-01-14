@@ -11,8 +11,8 @@
                     <tr>
                         <td rowspan="3" class="no-border"><img src="{{ $toys->photo }}" alt="{{ $toys->name }}"></td>
                         <td rowspan="3" class="no-border"></td>
-                        <td class="nameSurnameTable">{{ $toys->name }}</td>
-                        <td>+{{ $toys->min_age }}</td>
+                        <td class="nameTable">{{ $toys->name }}</td>
+                        <td class="toysAge">+{{ $toys->min_age }}</td>
                     </tr>
                     <tr>
                         <td colspan="2">{{ $toys->description }}</td>
