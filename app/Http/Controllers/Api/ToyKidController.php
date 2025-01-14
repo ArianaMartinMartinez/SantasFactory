@@ -18,5 +18,10 @@ class ToyKidController extends Controller
         return $randomToy;
     }
 
-   
+    public function getKids(){
+        $kids = Kid::all();
+        return $kids;
+    }
+
+    
 }
