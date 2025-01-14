@@ -13,7 +13,7 @@ class Toy extends Model
         'name',
         'photo',
         'description',
-        'min_age'
+        'age_range'
     ];
 
     public function kids()

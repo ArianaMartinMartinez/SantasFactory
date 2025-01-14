@@ -26,7 +26,7 @@
                     <td>{{$toy->name}}</td>
                     <td><img src="{{$toy->photo}}" alt="{{$toy->name}}"></td>
                     <td>{{$toy->description}}</td>
-                    <td>+{{$toy->min_age}}</td>
+                    <td>+{{$toy->age_range}}</td>
                     <td>{{$toy->created_at->format('d/m/y')}}</td>
                     <td>
                         <a class="crudBtn" href="toys/show/{{$toy->id}}">👀</a>
