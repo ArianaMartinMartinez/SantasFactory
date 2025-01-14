@@ -29,6 +29,17 @@ body {
     background-color: #f8f9fa;
 }
 
-main {
-    flex: 1;
+main{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--ligthGreen);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
