@@ -35,7 +35,17 @@ class ToyKidController extends Controller
                 $kid->toys()->detach();
                 $kid->toys()->attach($toy->id);
             }
-           
+            
+            if($kid->behaviour == '0' && $kid->age < '18'){
+                $toy = $this->randomToy();
+                while($toy->age_range != '+99'){
+                    $toy = $this->randomToy();
+                }
+                $kid->toys()->detach();
+                $kid->toys()->attach($toy->id);
+            }
+
+            
         }
 
     }
