@@ -32,9 +32,35 @@
     text-align: center;
 }
 
+.styleTableShowToys {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-spacing: 10px;
+}
+
+.styleTableShowToys td {
+    border: 1.5px solid var(--lightBlack);
+    border-radius: 0.5rem;
+    width: 200px;
+    text-align: center;
+}
+
+.containerToys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    width: 70%;
+}
+
 td.no-border {
     border: none;
-    padding: 1rem;
 }
 
 td.no-border img {
@@ -68,3 +94,4 @@ td.no-border img {
     padding: 1rem;
     width: 70%;
 }
+
