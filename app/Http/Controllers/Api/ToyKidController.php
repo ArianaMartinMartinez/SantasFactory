@@ -23,60 +23,66 @@ class ToyKidController extends Controller
         return $kids;
     }
 
+    public function attachToy($kid, string $toyId){
+        $kid->toys()->detach();
+        $kid->toys()->attach($toyId);
+    }
+
+    public function bigKidsGift(){
+        $toy = $this->randomToy();
+        while($toy->age_range != '+18'){
+            $toy = $this->randomToy();
+        }
+        return $toy;
+    }
+
+    public function badKidsGift(){
+        $toy = $this->randomToy();
+            while($toy->age_range != '+99'){
+                $toy = $this->randomToy();
+            }
+        return $toy;
+    }
+
+    public function goodKidsGift($kid){
+        $toy = $this->randomToy();
+        while($toy->age_range == '+18' || $toy->age_range == '+99'){
+            $toy = $this->randomToy();
+        }
+        if($toy->age_range != '+18' || $toy->age_range != '+99'){
+            $ageRange = explode('-', $toy->age_range);
+            while($ageRange[0] > $kid->age || $ageRange[1] < $kid->age){
+                $toy = $this->randomToy();
+                $ageRange = explode('-', $toy->age_range);
+            }
+        }
+        return $toy;
+    }
+
     public function assignRandomGift(){
         $kids = $this->getKids();
 
         foreach($kids as $kid){
             if($kid->age >= '18'){
-                $toy = $this->randomToy();
-                while($toy->age_range != '+18'){
-                    $toy = $this->randomToy();
-                }
-                $kid->toys()->detach();
-                $kid->toys()->attach($toy->id);
+                $toy = $this->bigKidsGift();
+                $this->attachToy($kid, $toy->id);
             }
             
             if($kid->behaviour == '0' && $kid->age < '18'){
-                $toy = $this->randomToy();
-                while($toy->age_range != '+99'){
-                    $toy = $this->randomToy();
-                }
-                $kid->toys()->detach();
-                $kid->toys()->attach($toy->id);
+                $toy = $this->badKidsGift();
+                $this->attachToy($kid, $toy->id);
             }
 
             if($kid->behaviour == '1' && $kid->age < '18'){
-                $toy = $this->randomToy();
-                while($toy->age_range == '+18' || $toy->age_range == '+99'){
-                    $toy = $this->randomToy();
+                $firstToy = $this->goodKidsGift($kid);
+                $this->attachToy($kid, $firstToy->id);
+
+                $secondToy = $this->goodKidsGift($kid);
+                while($secondToy->id == $firstToy->id){
+                    $secondToy = $this->goodKidsGift($kid);
                 }
-                if($toy->age_range != '+18' || $toy->age_range != '+99'){
-                    $ageRange = explode('-', $toy->age_range);
-                    while($ageRange[0] > $kid->age || $ageRange[1] < $kid->age){
-                        $toy = $this->randomToy();
-                        $ageRange = explode('-', $toy->age_range);
-                    }
-
-                    $kid->toys()->detach(); 
-                    $firstToy = $toy;
-                    $kid->toys()->attach($toy->id);
-
-                    $toy = $this->randomToy();
-                    while($toy->age_range == '+18' || $toy->age_range == '+99'){
-                        $toy = $this->randomToy();
-                    }
-                    if($toy->age_range != '+18' || $toy->age_range != '+99'){
-                        $ageRange = explode('-', $toy->age_range);
-                        while(($ageRange[0] > $kid->age && $firstToy->id == $toy->id) || ($ageRange[1] < $kid->age && $firstToy->id == $toy->id)){
-                            $toy = $this->randomToy();
-                            $ageRange = explode('-', $toy->age_range);
-                        }
-                        $kid->toys()->attach($toy->id);
-                    }
-
-                }
+                $kid->toys()->attach($secondToy);
             }
         }
-
     }
 }
