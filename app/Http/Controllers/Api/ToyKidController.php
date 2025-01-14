@@ -23,5 +23,20 @@ class ToyKidController extends Controller
         return $kids;
     }
 
-    
+    public function assignRandomGift(){
+        $kids = $this->getKids();
+
+        foreach($kids as $kid){
+            if($kid->age >= '18'){
+                $toy = $this->randomToy();
+                while($toy->age_range != '+18'){
+                    $toy = $this->randomToy();
+                }
+                $kid->toys()->detach();
+                $kid->toys()->attach($toy->id);
+            }
+           
+        }
+
+    }
 }
