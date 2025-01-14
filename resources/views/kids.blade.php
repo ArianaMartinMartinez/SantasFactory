@@ -10,24 +10,21 @@
     <table class="table">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Surname</th>
                 <th>Photo</th>
+                <th>Full name</th>
                 <th>Age</th>
                 <th>Country</th>
                 <th>Behaviour</th>
-                <th>Created at</th>
-                <th>Actions</th>
+                <th>Show</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($kids as $kid)
                 <tr>
-                    <td>{{$kid->id}}</td>
-                    <td>{{$kid->name}}</td>
-                    <td>{{$kid->surname}}</td>
                     <td><img src="{{$kid->photo}}" alt="{{$kid->name}}"></td>
+                    <td>{{$kid->name}} {{$kid->surname}}</td>
                     <td>{{$kid->age}}</td>
                     <td>{{$kid->country}}</td>
                     <td>
@@ -37,12 +34,24 @@
                             <span class="inactive">Bad</span>
                         @endif
                     </td>
-                    <td>{{ $kid->created_at->format('d/m/y')}}</td>
+                    {{-- <td><a class="crudBtn" href="kids/show/{{$kid->id}}">👁️</a></td>
+                    <td><a class="crudBtn"href="kids/edit/{{$kid->id}}">✏️</a></td>
+                    <td><a class="crudBtn" href="?action=delete&id={{$kid->id}}">❌</a></td> --}}
                     <td>
-                        <a class="crudBtn" href="kids/show/{{$kid->id}}">👀</a>
-                        <a class="crudBtn" href="kids/create">🆕</a>
-                        <a class="crudBtn"href="kids/edit/{{$kid->id}}">📝</a>
-                        <a class="crudBtn" href="?action=delete&id={{$kid->id}}">🗑️</a></td>
+                        <button class="showButton">
+                            <img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
+                        </button>
+                    </td>
+                    <td>
+                        <button class="editButton">
+                             <img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
+                        </button>
+                    </td>
+                    <td>
+                        <button class="deleteButton">
+                            <img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
+                        </button>
+                    </td>
                 </tr>
             @endforeach
         <tbody>
