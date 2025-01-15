@@ -36,3 +36,7 @@ Route::get('/santa/kids/show/{id}',[KidController::class, 'show'])->name('kidssh
 
 
 Route::get('/', function(){ return view('home'); })->name('santashome');
+
+//aboutUs
+
+Route::get('/aboutUs', function(){ return view('aboutUs'); })->name('Aboutus');
