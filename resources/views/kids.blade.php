@@ -2,17 +2,14 @@
 @section('content')
 
 <div class="backButtonDiv">
-    <button class="backButton">
-        <a href="{{ route('santashome') }}" class="backBtn">Back</a>
-    </button>
+
+        <a href="{{ route('santashome') }}" class="backBtnStyle">Back</a>
 </div>
-<div class="newFilterButton">
-    <button class="newKidButton">
-        <a href="">New Kid</a>
-    </button>
-    <button class="filterButton">
-        <a href="">Filter by</a>
-    </button>
+<div class="newFilterButtonDiv">
+
+        <a href="" class="backBtnStyle">New Kid</a>
+        <a href="" class="backBtnStyle">Filter by</a>
+
 </div>
 
 <div class="tableDiv">
@@ -31,8 +28,8 @@
         </thead>
         <tbody>
             @foreach ($kids as $kid)
-                <tr>
-                    <td><img src="{{$kid->photo}}" alt="{{$kid->name}}"></td>
+                <tr class="noborder">
+                    <td class="overflow"><img src="{{$kid->photo}}" alt="{{$kid->name}}" class="imgKid"></td>
                     <td>{{$kid->name}} {{$kid->surname}}</td>
                     <td>{{$kid->age}}</td>
                     <td>{{$kid->country}}</td>

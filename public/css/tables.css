@@ -1,95 +1,130 @@
-.tableKid .tableToy {
+.tableDiv {
     display: flex;
-    align-content: center;
-    margin: 20px auto;
-    padding: 10px;
-    background-color:#62020267; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
-    width: 90%;
-
-}
-
-.table {
-    border-collapse: collapse; 
-    text-align: left; 
-    font-family: 'Arial', sans-serif;
-    width: 100%;
-}
-
-.table th, .table td {
-    padding: 15px;
-    border: 1px solid #ffffff;
-    vertical-align: middle;
-}
-
-.table thead th {
-    background: #144414; 
+    justify-content: center;
+    text-align: center;
     font-weight: bold;
-    text-transform: uppercase; 
-    color: #ffffff;
-    text-shadow: 3px 1px 2px rgb(255, 42, 42);
 }
 
-.table tbody tr:nth-child(odd) {
-    background-color: #9f0404; 
+table {
+    border-collapse: separate;
+    border-spacing: 0 5rem;
+    table-layout: fixed;
 }
 
-.table tbody tr:nth-child(even) {
-    background-color: #115e11; 
+
+td.overflow{
+    display:flex;
+    overflow: visible;
+    white-space: nowrap;
 }
 
-.table tbody tr:nth-child(odd):hover {
-    background-color:  #ff3c3ca2; 
+.tableDiv thead th {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
 }
 
-.table tbody tr:nth-child(even):hover {
-    background-color: #5aff5a5a; 
+.imgKid {
+    width: 6rem;
+    overflow: visible;
+    object-fit: cover;
 }
 
-.table td:first-child {
-    font-weight: bold; 
-    color: #000000; 
+.tableKid tbody td {
+    background-color: #025940;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    height: 6rem;
 }
 
-.table td:nth-child(2) {
-    color: #000000; 
-    font-style: italic; 
+.tableKid tbody td:nth-child(1) {
+    border-radius: 20px 0px 0px 20px;
+}
+.tableKid tbody td:nth-child(8) {
+    border-radius: 0px 20px 20px 0px;
+}
+.tableKid thead th:nth-child(1) {
+    border-radius: 20px 0px 0px 20px;
+}
+.tableKid thead th:nth-child(8) {
+    border-radius: 0px 20px 20px 0px;
+}
+.tableKid thead {
+    color: white;
+    background-color: #590303;
+    text-transform: uppercase;
 }
 
-.table td:nth-child(3) {
-    text-align: center; 
+.actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
-td img{
-    width: 200px;
-    height: 250px;
+.actionButton img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.actionButton img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.actionButton img:active {
+    transform: scale(1.1);
+}
+
+.backButtonDiv {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.backButton {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #ffe4cc;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+.newFilterButtonDiv {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    width: 73.7rem;
+}
+
+.newFilterButton {
+    background-color: #025940;
+    color: #ffe4cc;
 }
 
 @media screen and (max-width: 768px) {
-    .tableToy .tableKid {
-        width: 100%; 
+    .tableKid .tableToy {
+        width: 100%;
         padding: 5px;
     }
 
-    .table th, .table td {
-        padding: 10px; 
-        font-size: 14px; 
-    }
-
-    .table {
-        font-size: 12px; 
+    .table th,
+    .table td {
+        padding: 8px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .table th, .table td {
-        display: block; 
+    .table th,
+    .table td {
+        display: block;
         width: 100%;
-        text-align: left; 
-    }
-
-    .table td:nth-child(3) {
-        text-align: left; 
+        text-align: left;
     }
 }
