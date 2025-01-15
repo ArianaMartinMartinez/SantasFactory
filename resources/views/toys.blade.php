@@ -1,13 +1,18 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="backBtnContainer">
-        <a href="{{ route('santashome') }}" class="backBtn">🔙</a>
-</div>
+<div class="backButtonDiv">
 
+    <a href="{{ route('santashome') }}" class="backBtnStyle">Back</a>
+</div>
+<div class="newFilterButtonDiv">
+
+    <a href="" class="backBtnStyle">New Kid</a>
+    <a href="" class="backBtnStyle">Filter by</a>
+
+</div>
 <div class="tableDiv">
-<h2 class="form-title">Toys</h2>
-    <table class="tableToy">
+    <table class="tableStyle">
         <thead>
             <tr>
                 <th>Photo</th>
@@ -22,7 +27,7 @@
         <tb>
             @foreach ($toys as $toy)
                 <tr>
-                    <td><img src="{{$toy->photo}}" alt="{{$toy->name}}"></td>
+                    <td class="overflow"><img src="{{$toy->photo}}" alt="{{$toy->name}}" class="imgToy"></td>
                     <td>{{$toy->name}}</td>
                     <td>+{{$toy->min_age}}</td>
                     <td>{{$toy->description}}</td>

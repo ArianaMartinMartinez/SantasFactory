@@ -13,7 +13,7 @@
 </div>
 
 <div class="tableDiv">
-    <table class="tableKid">
+    <table class="tableStyle">
         <thead>
             <tr>
                 <th>Photo</th>
@@ -28,7 +28,7 @@
         </thead>
         <tbody>
             @foreach ($kids as $kid)
-                <tr class="noborder">
+                <tr>
                     <td class="overflow"><img src="{{$kid->photo}}" alt="{{$kid->name}}" class="imgKid"></td>
                     <td>{{$kid->name}} {{$kid->surname}}</td>
                     <td>{{$kid->age}}</td>
@@ -40,9 +40,6 @@
                             <span>Bad</span>
                         @endif
                     </td>
-                    {{-- <td><a class="crudBtn" href="kids/show/{{$kid->id}}">👁️</a></td>
-                    <td><a class="crudBtn"href="kids/edit/{{$kid->id}}">✏️</a></td>
-                    <td><a class="crudBtn" href="?action=delete&id={{$kid->id}}">❌</a></td> --}}
                     <td>
                         <button class="actionButton">
                             <img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">

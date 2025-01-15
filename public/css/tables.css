@@ -19,7 +19,7 @@ td.overflow{
 }
 
 .tableDiv thead th {
-    color: white;
+    color: var(--lightBlue);
     text-align: center;
     text-transform: uppercase;
     padding: 2rem;
@@ -30,30 +30,35 @@ td.overflow{
     overflow: visible;
     object-fit: cover;
 }
+.imgToy {
+    width: 6rem;
+    overflow: visible;
+    object-fit: cover;
+}
 
-.tableKid tbody td {
-    background-color: #025940;
-    color: white;
+.tableStyle tbody td {
+    background-color: var(--green);
+    color: var(--lightBlue);
     vertical-align: middle;
     text-align: center;
     height: 6rem;
 }
 
-.tableKid tbody td:nth-child(1) {
+.tableStyle tbody td:nth-child(1) {
     border-radius: 20px 0px 0px 20px;
 }
-.tableKid tbody td:nth-child(8) {
+.tableStyle tbody td:last-child {
     border-radius: 0px 20px 20px 0px;
 }
-.tableKid thead th:nth-child(1) {
+.tableStyle thead th:nth-child(1) {
     border-radius: 20px 0px 0px 20px;
 }
-.tableKid thead th:nth-child(8) {
+.tableStyle thead th:last-child {
     border-radius: 0px 20px 20px 0px;
 }
-.tableKid thead {
-    color: white;
-    background-color: #590303;
+.tableStyle thead {
+    color: var(--lightBlue);
+    background-color: var(--darkRed);
     text-transform: uppercase;
 }
 
@@ -90,8 +95,8 @@ td.overflow{
     display: flex;
     text-align: center;
     justify-content: center;
-    color: #ffe4cc;
-    background-color: #333333;
+    color: var(--pink);
+    background-color: var(--lightBlack);
     text-decoration: none;
 }
 
@@ -103,8 +108,8 @@ td.overflow{
 }
 
 .newFilterButton {
-    background-color: #025940;
-    color: #ffe4cc;
+    background-color: var(--green);
+    color: var(--pink);
 }
 
 @media screen and (max-width: 768px) {
