@@ -18,4 +18,5 @@ Route::post('/santa/kids', [KidController::class, 'store'])->name('apikidsstore'
 Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('apikidsupdate');
 Route::get('/santa/kids/{id}',[KidController::class, 'show'])->name('apikidsshow');
 
-Route::post('/randomToyKid', [ToyKidController::class, 'index'])->name('apiRandomToyKid');
+Route::post('/randomToyKid', [ToyKidController::class, 'assignRandomGift'])->name('apiRandomToyKid');
+Route::get('/randomToyKid', [ToyKidController::class, 'index'])->name('apiToyKid');
