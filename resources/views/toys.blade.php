@@ -33,24 +33,19 @@
                     <td>{{$toy->description}}</td>
                     <td>
                         <button class="actionButton">
-                            <img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
+                            <a href="toys/show/{{$toy->id}}"><img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                             <img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
+                            <a href="toys/edit/{{$toy->id}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                            <img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
+                            <a href="?action=delete&id={{$toy->id}}"><img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
                         </button>
                     </td>
-                    {{-- <td>
-                        <a class="crudBtn" href="toys/show/{{$toy->id}}">👀</a>
-                        <a class="crudBtn" href="toys/create">🆕</a>
-                        <a class="crudBtn"href="toys/edit/{{$toy->id}}">📝</a>
-                        <a class="crudBtn" href="?action=delete&id={{$toy->id}}">🗑️</a></td> --}}
                 </tr>
             @endforeach
         <tb>

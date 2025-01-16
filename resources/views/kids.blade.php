@@ -42,17 +42,17 @@
                     </td>
                     <td>
                         <button class="actionButton">
-                            <img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
+                            <a href="kids/show/{{$kid->id}}"><img src="{{asset('img/buttons/showKid.png')}}"  alt="Show Kid Button"></a>
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                             <img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
+                            <a href="kids/edit/{{$kid->id}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                            <img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
+                            <a href="?action=delete&id={{$kid->id}}"><img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
                         </button>
                     </td>
                 </tr>
