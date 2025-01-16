@@ -84,10 +84,11 @@ class ToyKidController extends Controller
                 $kid->toys()->attach($secondToy);
             }
         }
+        $kids = Kid::with('toys')->get();
+        return response()->json($kids, 200);
     }
 
     public function index(){
-        $this->assignRandomGift();
         $kids = Kid::with('toys')->get();
         return response()->json($kids, 200);
     }

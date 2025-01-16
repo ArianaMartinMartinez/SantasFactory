@@ -4,6 +4,7 @@
 @import url(forms.css);
 @import url(tables.css);
 @import url(show.css);
+@import url(kidWithToy.css);
 
 :root {
     --lightBlue: #e9eff2;

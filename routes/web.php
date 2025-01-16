@@ -35,3 +35,6 @@ Route::get('/santa/kids/edit/{id}', [KidController::class, 'edit'])->name('kidse
 Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('kidsupdate');
 
 Route::get('/santa/kids/show/{id}',[KidController::class, 'show'])->name('kidsshow');
+
+Route::get('/santa/assignGifts', [ToyKidController::class, 'assignRandomGift'])->name('assignToys');
+Route::get('/santa/gifts', [ToyKidController::class, 'index'])->name('kidsWithToys');
