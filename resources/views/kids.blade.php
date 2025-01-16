@@ -7,8 +7,8 @@
 </div>
 <div class="newFilterButtonDiv">
 
-        <a href="" class="backBtnStyle">New Kid</a>
-        <a href="" class="backBtnStyle">Filter by</a>
+        <a href="{{route('kidscreate')}}" class="newFilterBtnStyle">New Kid</a>
+        <a href="" class="newFilterBtnStyle">Filter by</a>
 
 </div>
 
