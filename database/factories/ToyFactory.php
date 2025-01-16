@@ -20,7 +20,7 @@ class ToyFactory extends Factory
             'name' => $this->faker->word(),
             'photo' => $this->faker->imageUrl(640, 640, 'toys'),
             'description' => $this->faker->text(350),
-            'min_age' => $this->faker->randomElement([0, 7, 12])
+            'age_range' => $this->faker->randomElement(['0-3', '3-7', '7-12', '12-16', '16-18', '+18', '+99'])
         ];
     }
 }
