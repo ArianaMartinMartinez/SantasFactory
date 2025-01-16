@@ -7,15 +7,13 @@
         <section class="statistics">
             <div class="containerData">
                 <img src="{{asset('img/buttons/faceSanta.png')}}" alt="Santa Icon" class="iconData">
-                <div class="chart">
-                    <p>Test</p>
+                <div id="chart">
                 </div>
             </div>
 
             <div class="containerData">
                 <img src="{{asset('img/buttons/faceElf.png')}}" alt="Elf Icon" class="iconData">
-                <div class="chart">
-                    <p>Test</p>
+                <div id="chart">
                 </div>
             </div>
         </section>
