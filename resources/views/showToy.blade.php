@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-
-    <div class="backBtnContainer">
-        <a href="{{ route('toyshome') }}" class="backBtn">🔙</a>
-    </div>
+    <div class="containerShow">
+        <div class="backBtnStyle">
+            <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
+        </div>
 
     <div class="tableToy">
         <table class="table">
@@ -23,7 +23,7 @@
                     <td>{{$toys->name}}</td>
                     <td><img src="{{$toys->photo}}" alt="{{$toys->name}}"></td>
                     <td>{{$toys->description}}</td>
-                    <td>+{{$toys->age_range}}</td>
+                    <td>+{{$toys->min_age}}</td>
                     <td>{{$toys->created_at->format('d/m/y')}}</td>
                 </tr>
             <tb>
