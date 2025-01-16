@@ -24,15 +24,15 @@
             <h3>TOP TOYS</h3>
             <div class="productsGrid">
                 <div class="productTower">
-                    <p>Second Toy</p>
+                    <img src="{{ $topToys[1]->photo }}" alt="Toy top 2">
                     <img src="{{asset("img/buttons/secondTower.png")}}" alt="Second Tower">
                 </div>
                 <div class="productTower">
-                    <p>First Toy</p>
+                    <img src="{{ $topToys[0]->photo }}" alt="Toy top 1">
                     <img src="{{asset("img/buttons/firstTower.png")}}" alt="First Tower">
                 </div>
                 <div class="productTower">
-                    <p>Third Toy</p>
+                    <img src="{{ $topToys[2]->photo }}" alt="Toy top 3">
                     <img src="{{asset("img/buttons/thirdTower.png")}}" alt="Third Tower">
                 </div>
             </div>

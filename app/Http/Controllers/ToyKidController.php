@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kid;
+use App\Models\Toy;
 use Illuminate\Http\Request;
+use App\Http\Controllers\ToyController;
 
 class ToyKidController extends Controller
 {
@@ -84,5 +87,10 @@ class ToyKidController extends Controller
         $this->assignRandomGift();
         $kids = Kid::with('toys')->get();
         return view('kidsWithToys', compact('kids'));
+    }
+
+    public function home() {
+        $topToys = app(ToyController::class)->topToys();
+        return view('home', compact('topToys'));
     }
 }
