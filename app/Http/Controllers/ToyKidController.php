@@ -6,6 +6,7 @@ use App\Models\Kid;
 use App\Models\Toy;
 use Illuminate\Http\Request;
 use App\Http\Controllers\KidController;
+use Illuminate\Support\Facades\Redirect;
 
 class ToyKidController extends Controller
 {

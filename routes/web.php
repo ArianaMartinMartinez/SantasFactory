@@ -35,7 +35,7 @@ Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('kidsupda
 
 Route::get('/santa/kids/show/{id}',[KidController::class, 'show'])->name('kidsshow');
 
-Route::post('/santa/assignGifts', [ToyKidController::class, 'assignRandomGift'])->name('assignToys');
+Route::get('/santa/assignGifts', [ToyKidController::class, 'assignRandomGift'])->name('assignToys');
 Route::get('/santa/gifts', [ToyKidController::class, 'index'])->name('kidsWithToys');
 
 Route::get('/', function(){ return view('home'); })->name('santashome');
