@@ -19,4 +19,4 @@ Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('apikidsu
 Route::get('/santa/kids/{id}',[KidController::class, 'show'])->name('apikidsshow');
 
 Route::post('/randomToyKid', [ToyKidController::class, 'assignRandomGift'])->name('apiRandomToyKid');
-Route::get('/randomToyKid', [ToyKidController::class, 'index'])->name('apiToyKid');
+Route::get('/toyKidList', [ToyKidController::class, 'index'])->name('apiToyKid');
