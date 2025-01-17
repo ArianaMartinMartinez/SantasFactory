@@ -9,14 +9,8 @@ use Illuminate\Support\Facades\Redirect;
 class KidController extends Controller
 {
 
-    public function index(Request $request)
+    public function index()
     {
-        if ($request->action === 'delete'){
-            $this->destroy($request->id);
-            
-            return Redirect::to(route('kidshome'));
-        }
-
         $kids = Kid::get();
         return view('kids', compact('kids'));
     }
@@ -70,7 +64,7 @@ class KidController extends Controller
         ]);
 
         $kids -> save();
-        return Redirect::to('kidshome');
+        return Redirect::to(route('kidshome'));
     }
 
 
