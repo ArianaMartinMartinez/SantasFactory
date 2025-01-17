@@ -66,7 +66,8 @@ class ToyController extends Controller
     {
         $toys = Toy::find($id);
 
-        $toys -> delete();
+        $toys-> delete();
+        return Redirect::to(route('toyshome'));
     }
 
     public function topToys() {

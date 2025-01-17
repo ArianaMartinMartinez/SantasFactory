@@ -42,10 +42,12 @@
                         </button>
                     </td>
                     <td>
-                        <button class="actionButton">
-                            <a href="?action=delete&id={{$toy->id}}"><img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Kid Button">
-                        </button>
-                    </td>
+                         <form action="{{route('toysdestroy',$toy->id)}}"  method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="actionButton"><img src="{{asset('img/buttons/deleteKid.png')}}" alt="Delete Toy Button"></button>
+                         </form>
+                        </td>
                 </tr>
             @endforeach
         <tb>
