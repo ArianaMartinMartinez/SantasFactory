@@ -73,5 +73,6 @@ class KidController extends Controller
         $kids = Kid::find($id);
 
         $kids -> delete();
+        return Redirect::to(route('kidshome'));
     }
 }
