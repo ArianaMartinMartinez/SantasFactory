@@ -59,7 +59,7 @@ class ToyController extends Controller
         ]);
 
         $toys -> save();
-        return Redirect::to('toyshome');
+        return Redirect::to(route('toyshome'));
     }
 
     public function destroy(string $id)

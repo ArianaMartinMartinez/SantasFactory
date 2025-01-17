@@ -8,9 +8,10 @@
     
         <div class="containerFormInputs">
             <h2 class="form-title">Edit toy</h2>
-            <form action="{{ route('toysupdate', $toy->id) }}" method="PUT" class="form-container">
+            <form action="{{ route('toysupdate', $toy->id) }}" method="POST" class="form-container">
     
                 @csrf
+                @method('PUT')
     
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -19,7 +20,7 @@
     
                 <div class="mb-3">
                     <label for="age_range" class="form-label">Minimum Age</label>
-                    <input type="number" id="age_range" name="age_range" class="form-control" required value="{{ $toy->age_range }}">
+                    <input type="text" id="age_range" name="age_range" class="form-control" required value="{{ $toy->age_range }}">
                 </div>
 
                 <div class="mb-3">
