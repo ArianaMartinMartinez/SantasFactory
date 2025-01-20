@@ -81,11 +81,53 @@
   }
 
 .leyendChart ul {
-    list-style-type: none;
+    list-style:disc;
     padding: 0;
     margin: 0;
     gap: 1rem; 
 }
+
+#badChildrenData::marker {
+    color: #E34F30;
+    font-size: 1.5rem;
+}
+
+#goodChildrenData::marker {
+    color: #DB807C;
+    font-size: 1.5rem;
+}
+
+#data0To3::marker{
+    color: #025940;
+    font-size: 1.5rem;
+}
+
+#data3To7::marker{
+    color: #025905;
+    font-size: 1.5rem;
+}
+
+#data7To12::marker{
+    color: #30E373;
+    font-size: 1.5rem;
+}
+
+#data12To16::marker{
+    color: #7BE3A2;
+    font-size: 1.5rem;
+}
+
+#data16To18::marker{
+    color: #77E635;
+    font-size: 1.5rem;
+}
+
+#dataMore18::marker{
+    color: #1F742A;
+    font-size: 1.5rem;
+}
+
+
 .containerLegendChart{
     display: flex;
     flex-wrap: wrap;

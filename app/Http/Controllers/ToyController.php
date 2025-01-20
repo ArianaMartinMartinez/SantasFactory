@@ -79,4 +79,13 @@ class ToyController extends Controller
         $toyCount= Toy::where('age_range', $value)->count();
         return $toyCount;
     }
+    public function arrayCountRangeAgeToys(){
+        $dic = ['0-3', '3-7', '7-12', '12-16', '16-18', '+18'];
+        $toys=[];
+        foreach ($dic as $key){
+            $toy = $this->countRangeAgeToys($key);
+            $toys[]=$toy;
+        }
+        return $toys;
+    }
 }

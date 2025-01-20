@@ -12,8 +12,8 @@
                     </div>
                     <div class="leyendChart">
                         <ul class="left-list">
-                            <li>Good Children: {{$goodChildren}}</li>
-                            <li>Bad Children: {{$badChildren}}</li>
+                            <li id ="goodChildrenData">Good Children: {{$goodChildren}}</li>
+                            <li id = "badChildrenData">Bad Children: {{$badChildren}}</li>
                         </ul>
                         <p>Total: {{$goodChildren + $badChildren}}</p>
                     </div>
@@ -26,14 +26,14 @@
                     <div id="chart2"></div>
                     <div class="leyendChart">
                         <ul class="right-list">
-                            <li>0-3:</li>
-                            <li>3-7:</li>
-                            <li>7-12:</li>
-                            <li>12-16:</li>
-                            <li>16-18:</li>
-                            <li>+18:</li>
+                            <li id="data0To3">0-3:{{$allToysData[0] + 3}}</li>
+                            <li id="data3To7">3-7:{{$allToysData[1] + 3}}</li>
+                            <li id="data7To12">7-12:{{$allToysData[2] + 3}}</li>
+                            <li id="data12To16">12-16:{{$allToysData[3] + 3}}</li>
+                            <li id="data16To18">16-18:{{$allToysData[4] + 3}}</li>
+                            <li id="dataMore18">+18:{{$allToysData[5]}}</li>
                         </ul>
-                        <p>Total:</p>
+                        <p>Total:{{$allToysData[0] + $allToysData[1] + $allToysData[2] + $allToysData[3] + $allToysData[4] + $allToysData[5] + 3}} </p>
                     </div>
                 </div>
             </div>

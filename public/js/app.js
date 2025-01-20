@@ -1,7 +1,13 @@
-         
+const goodChildrenText = document.getElementById("goodChildrenData").innerText;         
+const goodChildren = parseInt(goodChildrenText.replace(/[^0-9]/g, ''), 10);
+
+const badChildrenText = document.getElementById("badChildrenData").innerText;         
+const badChildren = parseInt(badChildrenText.replace(/[^0-9]/g, ''), 10);
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var options1 = {
-    series: [44, 55],
+    series: [goodChildren, badChildren],
     chart: {
         width: 380,
         type: 'pie',
@@ -20,13 +26,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }],
     };
+
+const data0To3Text = document.getElementById("data0To3").innerText;         
+const data0To3 = parseInt(data0To3Text.split(':')[1].trim(), 10);
+const data3To7Text = document.getElementById("data3To7").innerText;         
+const data3To7 = parseInt(data3To7Text.split(':')[1].trim(), 10);
+const data7To12Text = document.getElementById("data7To12").innerText;         
+const data7To12 = parseInt(data7To12Text.split(':')[1].trim(), 10);
+const data12To16Text = document.getElementById("data12To16").innerText;         
+const data12To16 = parseInt(data12To16Text.split(':')[1].trim(), 10);
+const data16To18Text = document.getElementById("data16To18").innerText;         
+const data16To18 = parseInt(data16To18Text.split(':')[1].trim(), 10);
+const dataMore18Text = document.getElementById("dataMore18").innerText;         
+const dataMore18 = parseInt(dataMore18Text.split(':')[1].trim(), 10);
+
     var options2 = {
-    series: [23, 55, 13, 43, 22],
+    series: [data0To3, data3To7, data7To12, data12To16, data16To18,dataMore18],
     chart: {
         width: 380,
         type: 'pie',
         },
-    colors: ['#025940', '#025905', '#30E373', '#7BE3A2','#77E635'],
+    colors: ['#025940', '#025905', '#30E373', '#7BE3A2','#77E635', '#1F742A'],
     labels: ['0-3 years', '3-7 years', '7-12 years', '12-16 years', '16-18 years', '+18 years'],
     legend: {
         show: false,
