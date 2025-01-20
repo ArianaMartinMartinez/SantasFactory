@@ -12,10 +12,10 @@
                     </div>
                     <div class="leyendChart">
                         <ul class="left-list">
-                            <li>Good Children:</li>
-                            <li>Bad Children:</li>
+                            <li>Good Children: {{$goodChildren}}</li>
+                            <li>Bad Children: {{$badChildren}}</li>
                         </ul>
-                        <p>Total:</p>
+                        <p>Total: {{$goodChildren + $badChildren}}</p>
                     </div>
                 </div>
             </div>

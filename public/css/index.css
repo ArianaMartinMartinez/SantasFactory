@@ -89,6 +89,7 @@
 .containerLegendChart{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .left-list {
