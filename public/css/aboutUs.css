@@ -21,6 +21,7 @@
 .containerGroup img {
     width: 200px;
     border-radius: 50%;
+    border: solid var(--green) 6px;
 }
 
 .containerGroup {
