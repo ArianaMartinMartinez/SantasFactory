@@ -7,7 +7,7 @@
 </div>
 <div class="newFilterButtonDiv">
 
-    <a href="" class="newFilterBtnStyle">New Kid</a>
+    <a href="{{route('toyscreate')}}" class="newFilterBtnStyle">New Toy</a>
     <a href="" class="newFilterBtnStyle">Filter by</a>
 
 </div>
