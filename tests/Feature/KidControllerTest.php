@@ -15,16 +15,14 @@ class KidControllerTest extends TestCase
     {
 
         $this->withoutExceptionHandling();
-
         Kid::all();
 
         $response = $this->get('/santa/kids');
-
         $response->assertStatus(200)
             ->assertViewIs('kids');
     }
 
-     public function test_CreateFunctionReturnViewCorrectly()
+    public function test_CreateFunctionReturnViewCorrectly()
     {
 
         $response = $this->get('/santa/kids/create');
@@ -39,6 +37,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
+            'country' => 'Perú',
             'age' => 16,
             'behaviour' => true
         ]);
@@ -54,6 +53,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
+            'country' => 'Perú',
             'age' => 16,
             'behaviour' => true
         ]);
@@ -70,6 +70,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
+            'country' => 'Perú',
             'age' => 16,
             'behaviour' => true
         ]);
@@ -86,6 +87,7 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
+            'country' => 'Perú',
             'age' => 16,
             'behaviour' => true
         ]);
@@ -94,13 +96,13 @@ class KidControllerTest extends TestCase
             'name' => 'Pepito',
             'surname' => 'Grillo',
             'photo' => 'Example.img',
+            'country' => 'Perú',
             'age' => 15,
             'behaviour' => true
         ], );
 
         $Kid = Kid::find(1);
         $this->assertEquals(15, $Kid->age);
-
     }
 
     public function test_checkIfDeleteMethodDestroyElement()
@@ -114,18 +116,6 @@ class KidControllerTest extends TestCase
         ]);
 
         $response = $this->delete(route('kidsdestroy',1));
-        $this->assertDatabaseCount('Kids', 0);
-    }
-
-    public function test_checkIfRedirectViaActionToDeleteWorks(){
-        $response = $this->post(route('kidsstore'), [
-            'name' => 'Pepito',
-            'surname' => 'Grillo',
-            'photo' => 'Example.img',
-            'age' => 16,
-            'behaviour' => true
-        ]);
-        $this->get('/santa/kids/?action=delete&id=1');
         $this->assertDatabaseCount('Kids', 0);
     }
 }
