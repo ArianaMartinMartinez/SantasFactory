@@ -12,6 +12,11 @@ class ToyController extends Controller
     public function index()
     {
         $toys = Toy::get();
+        foreach($toys as $toy){
+            $description = substr($toy->description, 0, 100);
+            $toy->description = $description;
+
+        }
         return view('toys', compact('toys'));
     }
 

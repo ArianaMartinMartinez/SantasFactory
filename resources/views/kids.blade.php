@@ -8,7 +8,6 @@
 <div class="newFilterButtonDiv">
 
         <a href="{{route('kidscreate')}}" class="newFilterBtnStyle">New Kid</a>
-        <a href="" class="newFilterBtnStyle">Filter by</a>
 
 </div>
 
