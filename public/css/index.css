@@ -16,16 +16,14 @@
     backdrop-filter: blur(10px);
     border-radius: 20%;
 }
-.containerData{
+.containerDataChart{
     background-color: var(--pink);
     position: relative;
-    width: 20rem;
-    height: 20rem;
     border-radius: 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .statistics{
     display: flex;
@@ -33,18 +31,13 @@
     padding: 3rem;
     background-color: var(--green);
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 
 }
-
 .iconData{
-    position: absolute;
     top: -30;
-    left: 50%;
-    transform: translateX(-50%) translateY(-40%);
-
+    transform:translateY(-40%);
     width: 6rem;
-
 }
 .products{
     background-color: var(--pink);
@@ -66,4 +59,33 @@
     width: 20rem;
     
   }
-  
+
+.leyendChart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; 
+}
+.containerLegendChart{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-list {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    justify-items: start;
+}
+
+.right-list {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: start;
+}
+
+.right-list li, .left-list li {
+    padding: 0.5rem; 
+    font-size: 0.9rem; 
+    text-align: center; 
+    min-width: 2rem; 
+}

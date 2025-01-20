@@ -5,16 +5,39 @@
         </section>
 
         <section class="statistics">
-            <div class="containerData">
+            <div class="containerDataChart">
                 <img src="{{asset('img/buttons/faceSanta.png')}}" alt="Santa Icon" class="iconData">
-                <div id="chart1">
+                <div class="containerLegendChart">
+                    <div id="chart1">
+                    </div>
+                    <div class="leyendChart">
+                        <ul class="left-list">
+                            <li>Good Children:</li>
+                            <li>Bad Children:</li>
+                        </ul>
+                        <p>Total:</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="containerData">
+            <div class="containerDataChart">
                 <img src="{{asset('img/buttons/faceElf.png')}}" alt="Elf Icon" class="iconData">
-                <div id="chart2"></div>
+                <div class="containerLegendChart">
+                    <div id="chart2"></div>
+                    <div class="leyendChart">
+                        <ul class="right-list">
+                            <li>0-3:</li>
+                            <li>3-7:</li>
+                            <li>7-12:</li>
+                            <li>12-16:</li>
+                            <li>16-18:</li>
+                            <li>+18:</li>
+                        </ul>
+                        <p>Total:</p>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
         <section class="products">
