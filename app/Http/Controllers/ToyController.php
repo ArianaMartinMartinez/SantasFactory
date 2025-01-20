@@ -75,4 +75,8 @@ class ToyController extends Controller
 
         return $topToys;
     }
+    public function countRangeAgeToys( string $value){
+        $toyCount= Toy::where('age_range', $value)->count();
+        return $toyCount;
+    }
 }
