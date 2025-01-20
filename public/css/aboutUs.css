@@ -10,7 +10,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.containerAboutUs p {
+    font-size: 25px;
 }
 
 .containerGroup img {
@@ -21,13 +24,24 @@
 .containerGroup {
     display: flex;
     flex-direction: row;
+    gap: 20rem;
 }
 
 .containerColumn {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
 }
-.memberGroup{
+
+.memberGroup {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.memberGroup a{
+    text-decoration: none;
+    color: var(--lightBlack);
 }

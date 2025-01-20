@@ -7,10 +7,11 @@
         This project was developed by two different teams
     </h2>
     <div class="containerAboutUs">
-        <div class="containerGroup">
             <p>
-                First Sprint.
+                First Sprint
             </p>
+            <div class="containerGroup">
+
             <div class="containerColumn">
                 <div class="memberGroup">
 
@@ -48,10 +49,11 @@
 
         </div>
 
-        <div class="containerGroup">
             <p>
-                Second Sprint.
+                Second Sprint
             </p>
+            <div class="containerGroup">
+
             <div class="containerColumn">
                 <div class="memberGroup">
                     <img src="https://avatars.githubusercontent.com/u/63065122?v=4" alt="Angie Image">
