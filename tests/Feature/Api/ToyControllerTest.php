@@ -37,7 +37,7 @@ class ToyControllerTest extends TestCase
             'name' => 'test',
             'description' => 'test',
             'photo' => 'test',
-            'age_range' => 12
+            'age_range' => '0-3'
         ];
         $this->post(route('apitoysstore'), $toy);
         $response = $this->get(route('apitoysshow', 1));
@@ -53,7 +53,7 @@ class ToyControllerTest extends TestCase
             'name' => 'test',
             'description' => 'test',
             'photo' => 'test',
-            'age_range' => 12
+            'age_range' => '0-3'
         ];
         $this->put(route('apitoysupdate', 1), $toy);
         $response = $this->get(route('apitoysshow', 1));
