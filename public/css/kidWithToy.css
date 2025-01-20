@@ -1,0 +1,64 @@
+.kidsWithToysSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kidWithToyCard{
+    background-color: var(--green);
+    border-radius: 1rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.buttonSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kidCard{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 2rem;
+    color: var(--pink);
+}
+
+.kidName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.toyCard{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--pink);
+    padding: 2rem;
+    min-height: 8rem;
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid var(--lightBlack);
+}
+
+.link{
+    transition: 0.5s;
+}
+
+.link:hover{
+    transform: scale(1.2);
+}
+
+.kidCard img{
+    width: 8rem;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.toyCard img{
+    height: 6rem;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}

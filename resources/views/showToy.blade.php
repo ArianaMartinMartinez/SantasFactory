@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-
-    <div class="backBtnContainer">
-        <a href="{{ route('toyshome') }}" class="backBtn">🔙</a>
-    </div>
+    <div class="containerShow">
+        <div class="backBtnStyle">
+            <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
+        </div>
 
     <div class="tableToy">
         <table class="table">

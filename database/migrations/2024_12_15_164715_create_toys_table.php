@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('photo');
             $table->longText('description');
-            $table->smallInteger('min_age');
+            $table->enum('age_range', ['0-3', '3-7', '7-12', '12-16', '16-18', '+18', '+99']);
             $table->timestamps();
         });
     }
