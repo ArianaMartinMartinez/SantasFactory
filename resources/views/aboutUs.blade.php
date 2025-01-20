@@ -10,7 +10,7 @@
             <p>
                 First Sprint
             </p>
-            <div class="containerGroup">
+        <div class="containerGroup">
 
             <div class="containerColumn">
                 <div class="memberGroup">
@@ -49,45 +49,45 @@
 
         </div>
 
-            <p>
-                Second Sprint
-            </p>
-            <div class="containerGroup">
+        <p>
+            Second Sprint
+        </p>
+        <div class="containerGroup">
 
             <div class="containerColumn">
                 <div class="memberGroup">
                     <img src="https://avatars.githubusercontent.com/u/63065122?v=4" alt="Angie Image">
                     <a href="https://github.com/angiehelensanchez">Angie</a>
                 </div>
-            <div class="memberGroup">
+                <div class="memberGroup">
 
-                <img src="https://avatars.githubusercontent.com/u/104553851?v=4" alt="Ariana Image">
-                <a href="https://github.com/ArianaMartinMartinez">Ariana</a>
+                    <img src="https://avatars.githubusercontent.com/u/104553851?v=4" alt="Ariana Image">
+                    <a href="https://github.com/ArianaMartinMartinez">Ariana</a>
+                </div>
+                <div class="memberGroup">
+
+                    <img src="https://avatars.githubusercontent.com/u/185358197?v=4" alt="Alberto Image">
+                    <a href="">Alberto</a>
+                </div>
             </div>
-            <div class="memberGroup">
 
-                <img src="https://avatars.githubusercontent.com/u/185358197?v=4" alt="Alberto Image">
-                <a href="">Alberto</a>
+            <div class="containerColumn">
+                <div class="memberGroup">
+
+                    <img src="https://avatars.githubusercontent.com/u/185357978?v=4" alt="Jaz Image">
+                    <a href="https://github.com/Jaz356">Jaz</a>
+                </div>
+                <div class="memberGroup">
+
+                    <img src="https://avatars.githubusercontent.com/u/128361015?v=4" alt="Inma Image">
+                    <a href="https://github.com/Inma0711">Inma</a>
+                </div>
+                <div class="memberGroup">
+
+                    <img src="https://avatars.githubusercontent.com/u/118169171?v=4" alt="Alejandro Image">
+                    <a href="https://github.com/Camposx">Alejandro</a>
+                </div>
             </div>
         </div>
-
-        <div class="containerColumn">
-            <div class="memberGroup">
-
-                <img src="https://avatars.githubusercontent.com/u/185357978?v=4" alt="Jaz Image">
-                <a href="https://github.com/Jaz356">Jaz</a>
-            </div>
-            <div class="memberGroup">
-
-                <img src="https://avatars.githubusercontent.com/u/128361015?v=4" alt="Inma Image">
-                <a href="https://github.com/Inma0711">Inma</a>
-            </div>
-            <div class="memberGroup">
-
-                <img src="https://avatars.githubusercontent.com/u/118169171?v=4" alt="Alejandro Image">
-                <a href="https://github.com/Camposx">Alejandro</a>
-            </div>
-        </div>
-    </div>
     </div>
 @endsection
