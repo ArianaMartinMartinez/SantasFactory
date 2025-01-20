@@ -1,0 +1,33 @@
+.titleAboutUs {
+    font-family: Jacques Francois Shadow;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 60px;
+}
+
+.containerAboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerGroup img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.containerGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerColumn {
+    display: flex;
+    flex-direction: column;
+}
+.memberGroup{
+    display: flex;
+    flex-direction: row;
+}
