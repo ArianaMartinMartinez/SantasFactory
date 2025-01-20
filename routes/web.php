@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KidController;
 use App\Http\Controllers\ToyController;
+use App\Http\Controllers\ToyKidController;
 
-Route::get('/', function () {return view('home');});
+//Route::get('/', function () {return view('home');});
+Route::get('/', [ToyKidController::class, 'home'])->name('santashome');
 
 //toysroutes
 
@@ -35,8 +37,13 @@ Route::put('/santa/kids/{id}', [KidController::class, 'update'])->name('kidsupda
 Route::get('/santa/kids/show/{id}',[KidController::class, 'show'])->name('kidsshow');
 
 
+
 Route::get('/', function(){ return view('home'); })->name('santashome');
 
 //aboutUs
 
 Route::get('/aboutUs', function(){ return view('aboutUs'); })->name('Aboutus');
+
+Route::get('/santa/assignGifts', [ToyKidController::class, 'assignRandomGift'])->name('assignToys');
+Route::get('/santa/gifts', [ToyKidController::class, 'index'])->name('kidsWithToys');
+

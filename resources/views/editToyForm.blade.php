@@ -2,15 +2,16 @@
 @section('content')
 
     <div class="containerForm">
-        <div class="backBtnStyle">
+        <div class="backButtonDiv">
             <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
         </div>
     
         <div class="containerFormInputs">
             <h2 class="form-title">Edit toy</h2>
-            <form action="{{ route('toysupdate', $toy->id) }}" method="PUT" class="form-container">
+            <form action="{{ route('toysupdate', $toy->id) }}" method="POST" class="form-container">
     
                 @csrf
+                @method('PUT')
     
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -18,8 +19,8 @@
                 </div>
     
                 <div class="mb-3">
-                    <label for="min_age" class="form-label">Minimum Age</label>
-                    <input type="number" id="min_age" name="min_age" class="form-control" required value="{{ $toy->min_age }}">
+                    <label for="age_range" class="form-label">Minimum Age</label>
+                    <input type="text" id="age_range" name="age_range" class="form-control" required value="{{ $toy->age_range }}">
                 </div>
 
                 <div class="mb-3">

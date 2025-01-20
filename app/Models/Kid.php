@@ -19,6 +19,6 @@ class Kid extends Model
     ];
 
     public function toys(){
-        return $this->belongsToMany(Toy::class, 'kid_toy')->withTimestamps();}
+        return $this->belongsToMany(Toy::class, 'kid_toy');}
 }
 
