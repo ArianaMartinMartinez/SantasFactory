@@ -41,12 +41,12 @@
                     </td>
                     <td>
                         <button class="actionButton">
-                            <a href="kids/show/{{$kid->id}}"><img src="{{asset('img/buttons/showKid.png')}}"  alt="Show Kid Button"></a>
+                            <a href="{{route('kidsshow',$kid->id)}}"><img src="{{asset('img/buttons/showKid.png')}}"  alt="Show Kid Button"></a>
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                            <a href="kids/edit/{{$kid->id}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
+                            <a href="{{route('kidsedit',$kid->id)}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
                         </button>
                     </td>
                     <td>
