@@ -75,4 +75,8 @@ class KidController extends Controller
         $kids -> delete();
         return Redirect::to(route('kidshome'));
     }
+    public function countBehaviour(string $value){
+        $kids = Kid::where('behaviour', $value)->count();
+        return $kids;
+    }
 }
