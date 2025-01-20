@@ -1,7 +1,14 @@
 <header>
     <h1>SANTA'S FACTORY</h1>
-    <div class="headerButtons">
-        <a href="{{ route('kidshome') }}"><img src="{{ asset('img/buttons/buttonSanta.png')}}" alt=""></a>
-        <a href="{{ route('toyshome') }}"><img src="{{asset('img/buttons/buttonElf.png')}}" alt=""></a>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{{route('santashome')}}">Home</a></li>
+            </li>
+            <li><a href="{{route('kidsWithToys')}}">Gifts</a></li></li>
+            <li><a href="{{ route('kidshome') }}">Santa</a></li>
+            <li><a href="{{ route('toyshome') }}">Elfs</a></li>
+
+        </ul>
+    </nav>
 </header>
