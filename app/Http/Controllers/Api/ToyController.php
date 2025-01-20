@@ -19,7 +19,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_age' => $request->min_age
+            'age_range' => $request->age_range
         ]);
 
         return response()->json($toy, 200);
@@ -37,7 +37,7 @@ class ToyController extends Controller
             'name' => $request->name,
             'photo' => $request->photo,
             'description' => $request->description,
-            'min_age' => $request->min_age
+            'age_range' => $request->age_range
         ]);
 
         return response()->json($toy, 200);

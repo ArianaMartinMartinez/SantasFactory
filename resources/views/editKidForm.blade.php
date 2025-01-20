@@ -8,10 +8,11 @@
     
         <div class="containerFormInputs">
             <h2 class="form-title">Edit kid</h2>
-            <form action="{{ route('kidsupdate', $kid->id) }}" method="PUT" class="form-container">
+            <form action="{{ route('kidsupdate', $kid->id) }}" method="POST" class="form-container">
     
                 @csrf
-    
+                @method('PUT')
+                
                 <div class="inputs">
                     <div class="form-group">
                         <div class="mb-3">

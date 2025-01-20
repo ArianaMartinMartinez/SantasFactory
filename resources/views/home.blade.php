@@ -44,16 +44,16 @@
             <h3>TOP TOYS</h3>
             <div class="productsGrid">
                 <div class="productTower">
-                    <p>Second Toy</p>
-                    <img src="{{asset("img/buttons/secondTower.png")}}" alt="Second Tower">
+                    <img src="{{ $topToys[1]->photo }}" alt="Toy top 2" class="topToy">
+                    <img src="{{asset("img/buttons/secondTower.png")}}" alt="Second Tower" class="tower">
                 </div>
                 <div class="productTower">
-                    <p>First Toy</p>
-                    <img src="{{asset("img/buttons/firstTower.png")}}" alt="First Tower">
+                    <img src="{{ $topToys[0]->photo }}" alt="Toy top 1" class="topToy">
+                    <img src="{{asset("img/buttons/firstTower.png")}}" alt="First Tower" class="tower">
                 </div>
                 <div class="productTower">
-                    <p>Third Toy</p>
-                    <img src="{{asset("img/buttons/thirdTower.png")}}" alt="Third Tower">
+                    <img src="{{ $topToys[2]->photo }}" alt="Toy top 3" class="topToy">
+                    <img src="{{asset("img/buttons/thirdTower.png")}}" alt="Third Tower" class="tower">
                 </div>
             </div>
         </section>
