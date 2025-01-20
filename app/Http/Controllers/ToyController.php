@@ -9,14 +9,8 @@ use Illuminate\Support\Facades\Redirect;
 class ToyController extends Controller
 {
 
-    public function index(Request $request)
+    public function index()
     {
-        if ($request->action === 'delete'){
-            $this->destroy($request->id);
-            
-            return Redirect::to(route('toyshome'));
-        }
-
         $toys = Toy::get();
         return view('toys', compact('toys'));
     }
@@ -65,13 +59,20 @@ class ToyController extends Controller
         ]);
 
         $toys -> save();
-        return Redirect::to('toyshome');
+        return Redirect::to(route('toyshome'));
     }
 
     public function destroy(string $id)
     {
         $toys = Toy::find($id);
 
-        $toys -> delete();
+        $toys-> delete();
+        return Redirect::to(route('toyshome'));
+    }
+
+    public function topToys() {
+        $topToys = Toy::withCount('kids')->orderBy('kids_count', 'desc')->take(3)->get();
+
+        return $topToys;
     }
 }

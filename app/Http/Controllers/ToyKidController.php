@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kid;
+use App\Models\Toy;
 use Illuminate\Http\Request;
+use App\Http\Controllers\KidController;
+use App\Http\Controllers\ToyController;
+use Illuminate\Support\Facades\Redirect;
 
 class ToyKidController extends Controller
 {
@@ -78,11 +83,17 @@ class ToyKidController extends Controller
                 $kid->toys()->attach($secondToy);
             }
         }
+
+        return Redirect::to(route('kidsWithToys'));
     }
 
     public function index(){
-        $this->assignRandomGift();
         $kids = Kid::with('toys')->get();
         return view('kidsWithToys', compact('kids'));
+    }
+
+    public function home() {
+        $topToys = app(ToyController::class)->topToys();
+        return view('home', compact('topToys'));
     }
 }

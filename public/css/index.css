@@ -55,6 +55,26 @@
     text-align: center;
 }
 
+.productTower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
 .productTower img{
     width: 15rem;
+}
+
+.productTower .topToy {
+    width: 13rem;
+    animation: up-down 3s linear infinite;
+}
+
+@keyframes up-down {
+    0% { transform: translateY(0);}
+    25% { transform: translateY(1rem); }
+    75% { transform: translateY(-1rem); }
+    100% { transform: translateY(0); }
 }
