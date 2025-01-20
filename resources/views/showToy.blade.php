@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="containerShow">
-        <div class="backBtnStyle">
+        <div class="backButtonDiv">
             <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
         </div>
 

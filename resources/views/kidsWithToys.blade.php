@@ -3,7 +3,7 @@
     <div>
 
 
-        <div class="buttonSection">
+        <div class="backButtonDiv">
             <a href="{{ route('santashome') }}" class="backBtnStyle">Back</a>
 
             <a href="{{ route('assignToys') }}" class="backBtnStyle">Assign gifts</a>

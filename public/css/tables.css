@@ -88,6 +88,7 @@ td.overflow{
     display: flex;
     text-align: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 .backButton {

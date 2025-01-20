@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="containerForm">
-        <div class="backBtnStyle">
+        <div class="backButtonDiv">
             <a href="{{ route('toyshome') }}" class="backBtnStyle">Back</a>
         </div>
     
