@@ -43,7 +43,7 @@
 ***
 ### Project Diagrams (BBDD)
 
-![DiagramBBDD](https://github.com/user-attachments/assets/6fa747e7-1168-4103-baaa-781a269426be)
+![diagrama_baseDatos](https://github.com/user-attachments/assets/d2b1f3ab-f98f-43ca-9264-391f8c3a36e8)
 
 ***
 ## :scroll: Installation
@@ -154,8 +154,12 @@ Before you start to read how to install the project you'll need these requiremen
 ***
 
 #### :gift:Santa's list
-(Insert endpoints)
-***
+#### Post Toy Kids
+<img width="275" alt="postToyKids" src="https://github.com/user-attachments/assets/87a30d61-1165-4610-9656-cf835624381f" />
+
+#### Get Toy Kids List
+<img width="275" alt="getToyKidsList" src="https://github.com/user-attachments/assets/800e3dc5-a103-4fe1-af03-4c13881b326c" />
+
 
 ## :white_check_mark: Tests
 
@@ -190,6 +194,12 @@ This will add a **folder** called *coverage-report*, go to the folder, go to the
 - **Rodrigo Lastra**: https://github.com/rodrigoo1604
 - **Pepe Gavilán**: https://github.com/sr-calcetines
 - **Diego Santamaría**: https://github.com/DinGo21
+- **Ariana Martín**: https://github.com/ArianaMartinMartinez
+- **Angie Sanchez**: https://github.com/angiehelensanchez
+- **Alejandro Campos**: https://github.com/Camposx
+- **Alberto Hernández**: https://github.com/TOKIO-V2
+- **Jaz Walter**: https://github.com/Jaz356
+- **Inma González**: https://github.com/Inma0711
   
 ***
 ## Languages and tools
