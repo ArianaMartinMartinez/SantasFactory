@@ -16,13 +16,14 @@
     backdrop-filter: blur(10px);
     border-radius: 20%;
 }
-.containerData{
+.containerDataChart{
     background-color: var(--pink);
     position: relative;
-    width: 20rem;
-    height: 20rem;
     border-radius: 10%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .statistics{
     display: flex;
@@ -30,18 +31,13 @@
     padding: 3rem;
     background-color: var(--green);
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 
 }
-
 .iconData{
-    position: absolute;
     top: -30;
-    left: 50%;
-    transform: translateX(-50%) translateY(-40%);
-
+    transform:translateY(-40%);
     width: 6rem;
-
 }
 .products{
     background-color: var(--pink);
@@ -77,4 +73,82 @@
     25% { transform: translateY(1rem); }
     75% { transform: translateY(-1rem); }
     100% { transform: translateY(0); }
+}
+
+#chart {
+    width: 20rem;
+    
+  }
+
+.leyendChart ul {
+    list-style:disc;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; 
+}
+
+#badChildrenData::marker {
+    color: #E34F30;
+    font-size: 1.5rem;
+}
+
+#goodChildrenData::marker {
+    color: #DB807C;
+    font-size: 1.5rem;
+}
+
+#data0To3::marker{
+    color: #025940;
+    font-size: 1.5rem;
+}
+
+#data3To7::marker{
+    color: #025905;
+    font-size: 1.5rem;
+}
+
+#data7To12::marker{
+    color: #30E373;
+    font-size: 1.5rem;
+}
+
+#data12To16::marker{
+    color: #7BE3A2;
+    font-size: 1.5rem;
+}
+
+#data16To18::marker{
+    color: #77E635;
+    font-size: 1.5rem;
+}
+
+#dataMore18::marker{
+    color: #1F742A;
+    font-size: 1.5rem;
+}
+
+
+.containerLegendChart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left-list {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    justify-items: start;
+}
+
+.right-list {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: start;
+}
+
+.right-list li, .left-list li {
+    padding: 0.5rem; 
+    font-size: 0.9rem; 
+    text-align: center; 
+    min-width: 2rem; 
 }

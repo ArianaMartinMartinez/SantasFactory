@@ -93,7 +93,12 @@ class ToyKidController extends Controller
     }
 
     public function home() {
+        $goodChildren = app(KidController::class)->countBehaviour('1');
+        $badChildren = app(KidController::class)->countBehaviour('0');
+        $allToysData = app(ToyController::class)->arrayCountRangeAgeToys();
+
         $topToys = app(ToyController::class)->topToys();
-        return view('home', compact('topToys'));
+
+        return view('home', compact('topToys', 'goodChildren', 'badChildren', 'allToysData'));
     }
 }

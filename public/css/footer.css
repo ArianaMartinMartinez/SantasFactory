@@ -6,3 +6,15 @@ footer {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+footer a{
+    text-decoration: none;
+    color: var(--pink);
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+footer a:hover{
+    color: var(--yellow);
+}
+

@@ -12,6 +12,11 @@ class ToyController extends Controller
     public function index()
     {
         $toys = Toy::get();
+        foreach($toys as $toy){
+            $description = substr($toy->description, 0, 100);
+            $toy->description = $description;
+
+        }
         return view('toys', compact('toys'));
     }
 
@@ -74,5 +79,18 @@ class ToyController extends Controller
         $topToys = Toy::withCount('kids')->orderBy('kids_count', 'desc')->take(3)->get();
 
         return $topToys;
+    }
+    public function countRangeAgeToys( string $value){
+        $toyCount= Toy::where('age_range', $value)->count();
+        return $toyCount;
+    }
+    public function arrayCountRangeAgeToys(){
+        $dic = ['0-3', '3-7', '7-12', '12-16', '16-18', '+18'];
+        $toys=[];
+        foreach ($dic as $key){
+            $toy = $this->countRangeAgeToys($key);
+            $toys[]=$toy;
+        }
+        return $toys;
     }
 }

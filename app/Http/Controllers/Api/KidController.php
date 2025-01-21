@@ -60,4 +60,5 @@ class KidController extends Controller
         $kid = Kid::find($id);
         $kid -> delete();
     }
+
 }

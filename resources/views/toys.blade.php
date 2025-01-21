@@ -7,8 +7,7 @@
 </div>
 <div class="newFilterButtonDiv">
 
-    <a href="" class="newFilterBtnStyle">New Kid</a>
-    <a href="" class="newFilterBtnStyle">Filter by</a>
+    <a href="{{route('toyscreate')}}" class="newFilterBtnStyle">New Toy</a>
 
 </div>
 <div class="tableDiv">
@@ -30,15 +29,15 @@
                     <td class="overflow"><img src="{{$toy->photo}}" alt="{{$toy->name}}" class="imgToy"></td>
                     <td>{{$toy->name}}</td>
                     <td>{{$toy->age_range}}</td>
-                    <td>{{$toy->description}}</td>
+                    <td>{{$toy->description}}...</td>
                     <td>
                         <button class="actionButton">
-                            <a href="toys/show/{{$toy->id}}"><img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
+                            <a href="{{route('toysshow',$toy->id)}}"><img src="{{asset('img/buttons/showKid.png')}}" alt="Show Kid Button">
                         </button>
                     </td>
                     <td>
                         <button class="actionButton">
-                            <a href="toys/edit/{{$toy->id}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
+                            <a href="{{route('toysedit',$toy->id)}}}"><img src="{{asset('img/buttons/editKid.png')}}" alt="Edit Kid Button">
                         </button>
                     </td>
                     <td>
