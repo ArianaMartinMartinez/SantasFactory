@@ -124,4 +124,6 @@ td.no-border img {
     width: 70%;
 }
 
-º
+.toyImg{
+    max-width: 15rem;
+}
