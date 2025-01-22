@@ -190,7 +190,7 @@ php artisan test --coverage-html=coverage-report
 
 This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
 
-<img width="584" alt="coverageSantasFactory" src="https://github.com/user-attachments/assets/61cf2020-fc7f-4be0-bff0-f84162d7c3e7" />
+<img width="584" alt="coverageSantasFactory" src="https://github.com/user-attachments/assets/76a94a9e-94ef-4909-9de6-6cc51dfedd90" />
 
 
 ***
