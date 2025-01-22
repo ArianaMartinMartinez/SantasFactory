@@ -55,7 +55,7 @@
 
 1.) **Clone** this repository:
 ```
- https://github.com/rebecabernal/SantasFactory
+https://github.com/angiehelensanchez/SantasFactory
 ```
 
 ***
@@ -70,7 +70,7 @@ npm install
 ***
 3.) **Create** a *.env* file copying everything inside the existing file *.env.example* and **modify** the following **lines**:
 * DB_CONNECTION=mysql
-* DB_DATABASE=jobSearch
+* DB_DATABASE=hohotoysdb
 
 ***
 4.) Create a **database** in **MySQL**
@@ -174,7 +174,8 @@ Before you start to read how to install the project you'll need these requiremen
 ```
 php artisan test
 ```
-(insert screenshoot)
+<img width="593" alt="testSantaFactory" src="https://github.com/user-attachments/assets/546916af-04fb-47d2-ac03-851173c93195" />
+
 
 ***
 ### Coverage
@@ -189,7 +190,8 @@ php artisan test --coverage-html=coverage-report
 
 This will add a **folder** called *coverage-report*, go to the folder, go to the *index.html*, and then **open with live server**. After that you should see this page:
 
-(insert screenshoot)
+<img width="584" alt="coverageSantasFactory" src="https://github.com/user-attachments/assets/61cf2020-fc7f-4be0-bff0-f84162d7c3e7" />
+
 
 ***
 ## :bust_in_silhouette: Authors
