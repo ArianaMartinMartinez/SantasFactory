@@ -18,7 +18,7 @@
             
                     <div class="mb-3">
                         <label for="age_range" class="form-label">Minimum Age</label>
-                        <input type="number" id="age_range" name="age_range" class="form-control">
+                        <input type="text" id="age_range" name="age_range" class="form-control">
                     </div>
     
                     <div class="mb-3">
