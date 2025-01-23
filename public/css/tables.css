@@ -36,6 +36,10 @@ td.overflow{
     object-fit: cover;
 }
 
+.tableStyle {
+    width: 95%;
+}
+
 .tableStyle tbody td {
     background-color: var(--green);
     color: var(--lightBlue);
